@@ -122,7 +122,6 @@ export default function Home() {
 
         <nav className="nav" aria-label="Hoofdnavigatie">
           <a href="/over-ons">Over ons</a>
-          {/* <a href="#over-ons">Over ons</a> */}
           <a href="#missie-visie">Missie &amp; visie</a>
           <a href="#doelstelling">Doelstelling</a>
           <a href="#focus">Waar we helpen</a>
@@ -137,7 +136,7 @@ export default function Home() {
 
       <section className="hero" id="top">
         <div className="heroCopy">
-          <span className="eyebrow">Steun de Jeugd Fonds</span>
+          <span className="eyebrow">Stichting Steun de Jeugd</span>
 
           <h1>Ieder kind verdient de ruimte om te groeien.</h1>
 
@@ -209,7 +208,7 @@ export default function Home() {
           </div>
 
           <p>
-            Steun de Jeugd Fonds wil bijdragen aan een samenleving waarin
+            Stichting Steun de Jeugd wil bijdragen aan een samenleving waarin
             jongeren de ruimte, ondersteuning en mogelijkheden krijgen om
             zichzelf te ontwikkelen en met vertrouwen aan hun toekomst te
             bouwen.
@@ -226,8 +225,8 @@ export default function Home() {
             <h3>Jongeren de kans geven om hun mogelijkheden te ontdekken.</h3>
 
             <p>
-              Steun de Jeugd Fonds zet zich in om jongeren kansen te geven om
-              zich te ontwikkelen, hun talenten te ontdekken en veilig en
+              Stichting Steun de Jeugd zet zich in om jongeren kansen te geven
+              om zich te ontwikkelen, hun talenten te ontdekken en veilig en
               zelfstandig aan hun toekomst te bouwen.
             </p>
 
@@ -704,7 +703,7 @@ export default function Home() {
       <section className="fundSection" id="fonds">
         <div className="fundHeader">
           <div>
-            <span className="sectionKicker">Steun de Jeugd Fonds</span>
+            <span className="sectionKicker">Stichting Steun de Jeugd</span>
 
             <h2>
               Samen €100.000
@@ -715,7 +714,7 @@ export default function Home() {
 
           <div className="fundIntro">
             <p>
-              Met het Steun de Jeugd Fonds willen we €100.000 inzamelen om
+              Met het Stichting Steun de Jeugd willen we €100.000 inzamelen om
               jongeren meer kansen, ondersteuning, ontwikkeling en perspectief
               te bieden.
             </p>
@@ -733,7 +732,7 @@ export default function Home() {
               Onze eerste grote inzamelingsactie
             </span>
 
-            <h3>Steun de Jeugd Fonds</h3>
+            <h3>Stichting Steun de Jeugd</h3>
 
             <p>
               Niet iedere jongere krijgt dezelfde kansen. Met deze campagne
@@ -750,7 +749,7 @@ export default function Home() {
 
               <div>
                 <span>Campagne</span>
-                <strong>Steun de Jeugd Fonds</strong>
+                <strong>Stichting Steun de Jeugd</strong>
               </div>
             </div>
 
@@ -874,13 +873,14 @@ export default function Home() {
           <strong>Contact</strong>
 
           <a href="mailto:info@steundejeugd.nl">info@steundejeugd.nl</a>
-
+          <span>Schaikstraat 42</span>
+          <span>1107TB Amsterdam</span>
           <span>Nederland</span>
         </div>
 
         <div className="footerBottom">
-          <span>© 2026 Steun de Jeugd Fonds</span>
-          <span>Website in ontwikkeling</span>
+          <span>© 2026 Stichting Steun de Jeugd</span>
+          {/* <span>Website in ontwikkeling</span> */}
         </div>
       </footer>
     </main>

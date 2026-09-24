@@ -777,7 +777,9 @@ svg {
 
   color: var(--accent);
 
-  font: 90px/1 Georgia, serif;
+  font:
+    90px/1 Georgia,
+    serif;
 }
 
 .quoteSection blockquote {
@@ -2000,7 +2002,7 @@ svg {
 }
 
 /* ========================================
-   STEUN DE JEUGD FONDS
+   STICHTING STEUN DE JEUGD
 ======================================== */
 
 .fundSection {

@@ -6,7 +6,7 @@ import DonationWallets from "./DonationWallets";
 export const metadata: Metadata = {
   title: "Doneren | Steun de Jeugd",
   description:
-    "Steun Steun de Jeugd Fonds met een donatie via bankoverschrijving of cryptocurrency.",
+    "Steun Stichting Steun de Jeugd met een donatie via bankoverschrijving of cryptocurrency.",
 };
 
 const ArrowIcon = () => (
@@ -39,7 +39,7 @@ const HeartIcon = () => (
 
   Bijvoorbeeld:
   const bankIban = "NL00BANK0123456789";
-  const bankName = "Steun de Jeugd Fonds";
+  const bankName = "Stichting Steun de Jeugd";
 */
 const bankIban = "";
 const bankName = "Steun de Jeugd";
@@ -62,10 +62,12 @@ export default function DonatePage() {
         </Link>
 
         <nav className="nav" aria-label="Hoofdnavigatie">
-          <Link href="/#over-ons">Over ons</Link>
-          <Link href="/#doelstelling">Doelstelling</Link>
-          <Link href="/#focus">Waar we helpen</Link>
-          <Link href="/#contact">Contact</Link>
+          <a href="/over-ons">Over ons</a>
+          <a href="#missie-visie">Missie &amp; visie</a>
+          <a href="#doelstelling">Doelstelling</a>
+          <a href="#focus">Waar we helpen</a>
+          <a href="#fonds">Steun het fonds</a>
+          <a href="#contact">Contact</a>
         </nav>
 
         <Link className="headerCta donateHeaderActive" href="/doneren">
@@ -84,7 +86,7 @@ export default function DonatePage() {
           </h1>
 
           <p>
-            Met jouw bijdrage help je het Steun de Jeugd fonds om projecten,
+            Met jouw bijdrage help je het Stichting Steun de Jeugd om projecten,
             activiteiten en ondersteuning voor jongeren mogelijk te maken.
             Iedere bijdrage, groot of klein, helpt ons verder.
           </p>
@@ -96,7 +98,6 @@ export default function DonatePage() {
         </div>
 
         <div className="donateHeroVisual">
-
           <Image
             src="/images/headerImage.png"
             alt="Kind verkleed als superheld"
@@ -126,7 +127,7 @@ export default function DonatePage() {
           <h2>Kies hoe je wilt bijdragen.</h2>
 
           <p>
-            Je kunt Steun de Jeugd Fonds ondersteunen via een
+            Je kunt Stichting Steun de Jeugd ondersteunen via een
             bankoverschrijving of rechtstreeks met cryptocurrency.
           </p>
         </div>
@@ -141,7 +142,7 @@ export default function DonatePage() {
 
             <p>
               Via een bankoverschrijving kun je rechtstreeks een bijdrage
-              overmaken aan Steun de Jeugd Fonds.
+              overmaken aan Stichting Steun de Jeugd.
             </p>
 
             {hasBankDetails ? (
@@ -199,7 +200,7 @@ export default function DonatePage() {
           </div>
 
           <p>
-            De walletadressen worden door Steun de Jeugd Fonds beheerd.
+            De walletadressen worden door Stichting Steun de Jeugd beheerd.
             Kopieer altijd het adres rechtstreeks vanaf deze pagina en
             controleer het netwerk voordat je verstuurt.
           </p>
@@ -232,7 +233,7 @@ export default function DonatePage() {
           <p>
             Heb je een vraag over een donatie, bankoverschrijving,
             cryptotransactie of ontvangstbevestiging? Neem dan contact op met
-            Steun de Jeugd Fonds.
+            Stichting Steun de Jeugd.
           </p>
         </div>
 
@@ -264,37 +265,38 @@ export default function DonatePage() {
         <div className="footerColumn">
           <strong>Navigatie</strong>
 
-          <Link href="/#over-ons">Over ons</Link>
-
-          <Link href="/#doelstelling">Doelstelling</Link>
-
-          <Link href="/#focus">Waar we helpen</Link>
-
-          <Link href="/doneren">Doneren</Link>
+          <a href="/over-ons">Over ons</a>
+          {/* <a href="#over-ons">Over ons</a> */}
+          <a href="#missie-visie">Missie &amp; visie</a>
+          <a href="#doelstelling">Doelstelling</a>
+          <a href="#focus">Waar we helpen</a>
+          <a href="#fonds">Steun het fonds</a>
         </div>
 
         <div className="footerColumn">
           <strong>Community</strong>
 
           <a href="#">X (Twitter)</a>
-
           <a href="#">Instagram</a>
-
           <a href="#">Facebook</a>
+          <a href="#">TikTok</a>
+          <a href="#">Snapchat</a>
+          <a href="#">LinkedIn</a>
         </div>
 
         <div className="footerColumn">
           <strong>Contact</strong>
 
           <a href="mailto:info@steundejeugd.nl">info@steundejeugd.nl</a>
-
+          <span>Schaikstraat 42</span>
+          <span>1107TB Amsterdam</span>
           <span>Nederland</span>
         </div>
 
         <div className="footerBottom">
-          <span>© 2026 Steun de Jeugd Fonds</span>
+          <span>© 2026 Stichting Steun de Jeugd</span>
 
-          <span>Steun de Jeugd Fonds</span>
+          {/* <span>Stichting Steun de Jeugd</span> */}
         </div>
       </footer>
     </main>

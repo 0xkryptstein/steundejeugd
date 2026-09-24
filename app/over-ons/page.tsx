@@ -3,9 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Over ons | Steun de Jeugd Fonds",
+  title: "Over ons | Stichting Steun de Jeugd",
   description:
-    "Lees het verhaal van Steun de Jeugd Fonds, opgericht begin 2014 met als doel een betere toekomst voor de jeugd.",
+    "Lees het verhaal van Stichting Steun de Jeugd, opgericht begin 2014 met als doel een betere toekomst voor de jeugd.",
 };
 
 const ArrowIcon = () => (
@@ -97,7 +97,11 @@ export default function AboutPage() {
   return (
     <main>
       <header className="siteHeader">
-        <Link className="brand" href="/" aria-label="Steun de Jeugd Fonds home">
+        <Link
+          className="brand"
+          href="/"
+          aria-label="Stichting Steun de Jeugd home"
+        >
           <Image
             src="/images/logo.png"
             alt="Steun de Jeugd"
@@ -109,12 +113,12 @@ export default function AboutPage() {
         </Link>
 
         <nav className="nav" aria-label="Hoofdnavigatie">
-          <Link href="/over-ons">Over ons</Link>
-          <Link href="/#missie-visie">Missie &amp; visie</Link>
-          <Link href="/#doelstelling">Doelstelling</Link>
-          <Link href="/#focus">Waar we helpen</Link>
-          <Link href="/#fonds">Steun het fonds</Link>
-          <Link href="/#contact">Contact</Link>
+          <a href="/over-ons">Over ons</a>
+          <a href="#missie-visie">Missie &amp; visie</a>
+          <a href="#doelstelling">Doelstelling</a>
+          <a href="#focus">Waar we helpen</a>
+          <a href="#fonds">Steun het fonds</a>
+          <a href="#contact">Contact</a>
         </nav>
 
         <Link className="headerCta" href="/doneren">
@@ -292,7 +296,7 @@ export default function AboutPage() {
               <h3>De basis verder versterken</h3>
 
               <p>
-                Met Steun de Jeugd Fonds bouwen we verder aan een herkenbaar
+                Met Stichting Steun de Jeugd bouwen we verder aan een herkenbaar
                 platform voor projecten, ondersteuning, fondsenwerving en
                 samenwerking rond jongeren.
               </p>
@@ -325,7 +329,7 @@ export default function AboutPage() {
 
         <div className="aboutFutureRight">
           <p>
-            Op langere termijn wil Steun de Jeugd Fonds uitgroeien tot een
+            Op langere termijn wil Stichting Steun de Jeugd uitgroeien tot een
             herkenbaar en transparant platform waar jongeren, scholen,
             organisaties, bedrijven en donateurs elkaar kunnen vinden.
           </p>
@@ -396,11 +400,12 @@ export default function AboutPage() {
         <div className="footerColumn">
           <strong>Navigatie</strong>
 
-          <Link href="/over-ons">Over ons</Link>
-          <Link href="/#missie-visie">Missie &amp; visie</Link>
-          <Link href="/#doelstelling">Doelstelling</Link>
-          <Link href="/#focus">Waar we helpen</Link>
-          <Link href="/#fonds">Steun het fonds</Link>
+          <a href="/over-ons">Over ons</a>
+          {/* <a href="#over-ons">Over ons</a> */}
+          <a href="#missie-visie">Missie &amp; visie</a>
+          <a href="#doelstelling">Doelstelling</a>
+          <a href="#focus">Waar we helpen</a>
+          <a href="#fonds">Steun het fonds</a>
         </div>
 
         <div className="footerColumn">
@@ -409,19 +414,23 @@ export default function AboutPage() {
           <a href="#">X (Twitter)</a>
           <a href="#">Instagram</a>
           <a href="#">Facebook</a>
+          <a href="#">TikTok</a>
+          <a href="#">Snapchat</a>
+          <a href="#">LinkedIn</a>
         </div>
 
         <div className="footerColumn">
           <strong>Contact</strong>
 
           <a href="mailto:info@steundejeugd.nl">info@steundejeugd.nl</a>
-
+          <span>Schaikstraat 42</span>
+          <span>1107TB Amsterdam</span>
           <span>Nederland</span>
         </div>
 
         <div className="footerBottom">
-          <span>© 2026 Steun de Jeugd Fonds</span>
-          <span>Een initiatief van Stichting Steun de Jeugd</span>
+          <span>© 2026 Stichting Steun de Jeugd</span>
+          {/* <span>Een initiatief van Stichting Steun de Jeugd</span> */}
         </div>
       </footer>
     </main>
